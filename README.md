@@ -12,3 +12,7 @@
    will start a node server and use liverload and watch to allow you to continously run the web app while
    making changes.  So as you make changes in your favorite editor / IDE it will refresh the pages you are viewing.
 Have Fun!!
+
+https://raw.githubusercontent.com/phaseone2015/hackathon2015/master/beforesearch.png
+
+https://raw.githubusercontent.com/phaseone2015/hackathon2015/master/aftersearch.png
