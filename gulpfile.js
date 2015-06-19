@@ -3,6 +3,8 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var wrench = require('wrench');
+var ghPages = require('gulp-gh-pages');
+
 //var connect = require('gulp-connect');
 
 var options = {
@@ -48,4 +50,9 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
 
 gulp.task('default', ['clean'], function () {
     gulp.start('build');
+});
+
+gulp.task('deploy', ['build'], function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
